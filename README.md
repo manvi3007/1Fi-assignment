@@ -1,5 +1,5 @@
-# 1Fi Marketplace | LIVE DEMO - 1fi-assignment-one.vercel.app
-
+# 1Fi Marketplace 
+[🚀 Live Demo](https://1fi-assignment-one.vercel.app/)
 A mobile-first Marketplace experience built as part of the 1Fi SDE assignment.
 
 The Marketplace is integrated into the existing Shop experience and allows users to browse products, view product details, select product variants and No-Cost EMI plans, check eligibility, verify mutual-fund-backed financing, and complete a simulated purchase flow.
