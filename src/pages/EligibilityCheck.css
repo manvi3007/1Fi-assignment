@@ -1,0 +1,273 @@
+.eligibility-page {
+  min-height: 100%;
+  padding: 20px 16px 30px;
+  background: #f8f8fa;
+}
+
+/* Header */
+.eligibility-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.eligibility-back {
+  width: 38px;
+  height: 38px;
+  border: none;
+  border-radius: 12px;
+  background: #ffffff;
+  color: #292933;
+  font-size: 24px;
+  cursor: pointer;
+  box-shadow: 0 3px 12px rgba(30, 25, 60, 0.08);
+}
+
+.eligibility-header h2 {
+  font-size: 20px;
+  font-weight: 750;
+  color: #22222d;
+}
+
+/* Intro */
+.eligibility-intro {
+  margin-bottom: 20px;
+}
+
+.eligibility-intro h1 {
+  font-size: 24px;
+  line-height: 1.25;
+  color: #22222d;
+  margin-bottom: 8px;
+}
+
+.eligibility-intro p {
+  font-size: 13px;
+  line-height: 1.5;
+  color: #858590;
+}
+
+/* Product summary */
+.eligibility-product {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px;
+  background: #ffffff;
+  border-radius: 16px;
+  margin-bottom: 20px;
+  border: 1px solid #eceaf1;
+}
+
+.eligibility-product img {
+  width: 64px;
+  height: 64px;
+  object-fit: cover;
+  border-radius: 12px;
+  background: #f3f3f6;
+}
+
+.eligibility-product-info {
+  min-width: 0;
+}
+
+.eligibility-product-info h3 {
+  font-size: 14px;
+  font-weight: 700;
+  color: #252530;
+  margin-bottom: 5px;
+}
+
+.eligibility-product-info p {
+  font-size: 14px;
+  font-weight: 750;
+  color: #7228df;
+}
+
+/* Form */
+.eligibility-form {
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 18px;
+  border: 1px solid #eceaf1;
+}
+
+.form-group {
+  margin-bottom: 18px;
+}
+
+.form-group label {
+  display: block;
+  font-size: 12px;
+  font-weight: 700;
+  color: #383842;
+  margin-bottom: 8px;
+}
+
+.form-group input {
+  width: 100%;
+  height: 48px;
+  border: 1px solid #ddd9e6;
+  border-radius: 12px;
+  padding: 0 14px;
+  font-size: 14px;
+  color: #252530;
+  background: #ffffff;
+  outline: none;
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.form-group input:focus {
+  border-color: #7228df;
+  box-shadow: 0 0 0 3px rgba(114, 40, 223, 0.08);
+}
+
+.form-group input::placeholder {
+  color: #aaa7b2;
+}
+
+/* Error */
+.eligibility-error {
+  background: #fff1f1;
+  color: #c0392b;
+  border: 1px solid #f3cccc;
+  border-radius: 12px;
+  padding: 11px 12px;
+  font-size: 12px;
+  line-height: 1.4;
+  margin-bottom: 16px;
+}
+
+/* Button */
+.check-eligibility-button {
+  width: 100%;
+  height: 48px;
+  border: none;
+  border-radius: 14px;
+  background: #7228df;
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 750;
+  cursor: pointer;
+  transition:
+    background 0.2s ease,
+    transform 0.15s ease;
+}
+
+.check-eligibility-button:hover {
+  background: #6020c4;
+}
+
+.check-eligibility-button:active {
+  transform: scale(0.98);
+}
+
+.check-eligibility-button:disabled {
+  opacity: 0.65;
+  cursor: not-allowed;
+}
+
+/* Security note */
+.eligibility-note {
+  display: flex;
+  gap: 8px;
+  align-items: flex-start;
+  margin-top: 16px;
+  padding: 12px;
+  background: #f5f1fb;
+  border-radius: 12px;
+  color: #716b7d;
+  font-size: 11px;
+  line-height: 1.5;
+}
+
+.eligibility-note-icon {
+  color: #7228df;
+  font-size: 15px;
+  flex-shrink: 0;
+}
+
+/* Eligible result */
+.eligibility-result {
+  text-align: center;
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 28px 20px;
+  border: 1px solid #eceaf1;
+}
+
+.eligibility-success-icon {
+  width: 58px;
+  height: 58px;
+  margin: 0 auto 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: #eee6fb;
+  color: #7228df;
+  font-size: 25px;
+  font-weight: 800;
+}
+
+.eligibility-result h2 {
+  font-size: 20px;
+  color: #252530;
+  margin-bottom: 8px;
+}
+
+.eligibility-result p {
+  color: #858590;
+  font-size: 13px;
+  line-height: 1.5;
+  margin-bottom: 18px;
+}
+
+.eligibility-limit {
+  background: #f6f1fc;
+  border-radius: 14px;
+  padding: 14px;
+  margin-bottom: 18px;
+}
+
+.eligibility-limit span {
+  display: block;
+  color: #858590;
+  font-size: 11px;
+  margin-bottom: 5px;
+}
+
+.eligibility-limit strong {
+  color: #7228df;
+  font-size: 22px;
+}
+
+.eligibility-continue {
+  width: 100%;
+  height: 48px;
+  border: none;
+  border-radius: 14px;
+  background: #7228df;
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 750;
+  cursor: pointer;
+}
+
+@media (max-width: 380px) {
+  .eligibility-page {
+    padding-left: 14px;
+    padding-right: 14px;
+  }
+
+  .eligibility-intro h1 {
+    font-size: 22px;
+  }
+
+  .eligibility-form {
+    padding: 15px;
+  }
+}

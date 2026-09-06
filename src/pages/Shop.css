@@ -1,0 +1,595 @@
+.shop-page {
+  min-height: 100%;
+  padding-bottom: 30px;
+  background: #f8f8fa;
+}
+
+/* =========================
+   HERO
+========================= */
+
+.shop-hero {
+  min-height: 425px;
+
+  background: linear-gradient(135deg, #32109b 0%, #4b16c9 50%, #6b2be8 100%);
+
+  position: relative;
+  overflow: hidden;
+
+  padding: 52px 36px 45px;
+
+  color: #ffffff;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+
+  max-width: 310px;
+}
+
+/* No-cost EMI badge */
+
+.emi-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+
+  border: 1px solid rgba(255, 255, 255, 0.6);
+
+  border-radius: 22px;
+
+  padding: 8px 14px;
+
+  font-size: 14px;
+  font-weight: 700;
+
+  letter-spacing: 0.5px;
+
+  margin-bottom: 22px;
+}
+
+/* Hero heading */
+
+.shop-hero h1 {
+  font-size: 37px;
+
+  line-height: 1.03;
+
+  font-weight: 800;
+
+  letter-spacing: -1px;
+
+  margin-bottom: 18px;
+}
+
+.shop-hero h1 span {
+  font-weight: 400;
+
+  font-style: italic;
+}
+
+/* Hero description */
+
+.shop-hero p {
+  font-size: 15px;
+
+  line-height: 1.45;
+
+  color: rgba(255, 255, 255, 0.9);
+}
+
+/* Temporary shopping visual */
+
+.hero-shopping-image {
+  position: absolute;
+
+  right: -15px;
+  bottom: 28px;
+
+  width: 175px;
+  height: 175px;
+
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 100px;
+
+  transform: rotate(-8deg);
+
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 0.18),
+    rgba(255, 255, 255, 0)
+  );
+}
+
+/* =========================
+   SHOP OPTIONS / TABS
+========================= */
+
+.shop-tabs {
+  position: relative;
+
+  z-index: 5;
+
+  margin: -34px 14px 20px;
+
+  min-height: 68px;
+
+  padding: 5px;
+
+  background: #f1ebfb;
+
+  border-radius: 36px;
+
+  display: flex;
+  align-items: center;
+
+  box-shadow: 0 5px 18px rgba(60, 30, 100, 0.08);
+}
+
+.shop-tab {
+  flex: 1;
+
+  min-width: 0;
+
+  height: 58px;
+
+  border: none;
+
+  background: transparent;
+
+  border-radius: 30px;
+
+  color: #747481;
+
+  font-family: inherit;
+
+  font-size: 13px;
+
+  font-weight: 650;
+
+  cursor: pointer;
+
+  transition:
+    background 0.2s ease,
+    color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+/* Selected option */
+
+.shop-tab.active {
+  background: #ffffff;
+
+  color: #7228df;
+
+  box-shadow:
+    0 2px 8px rgba(80, 40, 130, 0.08),
+    inset 0 0 0 1px #e2d6f5;
+}
+
+/* Purple indicator */
+
+.shop-tab.active::after {
+  content: "";
+
+  display: block;
+
+  width: 24px;
+
+  height: 3px;
+
+  margin: 6px auto 0;
+
+  background: #7228df;
+
+  border-radius: 10px;
+}
+
+/* =========================
+   SEARCH
+========================= */
+
+.shop-search {
+  margin: 0 20px 20px;
+
+  height: 58px;
+
+  background: #ffffff;
+
+  border: 1px solid #e2e2e8;
+
+  border-radius: 30px;
+
+  display: flex;
+  align-items: center;
+
+  padding: 0 18px;
+
+  box-shadow: 0 2px 8px rgba(30, 30, 50, 0.02);
+}
+
+.search-icon {
+  font-size: 27px;
+
+  color: #9298a8;
+
+  margin-right: 13px;
+
+  transform: rotate(-20deg);
+}
+
+.shop-search input {
+  width: 100%;
+
+  border: none;
+
+  outline: none;
+
+  background: transparent;
+
+  font-family: inherit;
+
+  font-size: 15px;
+
+  color: #20202c;
+}
+
+.shop-search input::placeholder {
+  color: #9699a8;
+}
+
+/* =========================
+   SECTIONS
+========================= */
+
+.brands-section,
+.stores-section,
+.marketplace-section {
+  padding: 0 20px;
+}
+
+.section-heading-row {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  margin: 0 0 14px;
+}
+
+.brands-section h2,
+.stores-section h2,
+.marketplace-section h2 {
+  font-size: 25px;
+
+  line-height: 1.2;
+
+  font-weight: 750;
+
+  color: #171724;
+}
+
+/* =========================
+   BRAND CARDS
+========================= */
+
+.brand-list {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 14px;
+}
+
+.brand-card {
+  width: 100%;
+
+  min-height: 116px;
+
+  padding: 18px;
+
+  display: flex;
+
+  align-items: center;
+
+  text-align: left;
+
+  background: #ffffff;
+
+  border: 1px solid #e4e4e9;
+
+  border-radius: 22px;
+
+  cursor: pointer;
+
+  font-family: inherit;
+
+  transition:
+    transform 0.15s ease,
+    box-shadow 0.15s ease;
+}
+
+.brand-card:hover {
+  transform: translateY(-2px);
+
+  box-shadow: 0 8px 22px rgba(30, 25, 60, 0.08);
+}
+
+.brand-card:active {
+  transform: scale(0.99);
+}
+
+/* Brand logo */
+
+.brand-logo {
+  width: 78px;
+  height: 78px;
+
+  flex-shrink: 0;
+
+  border-radius: 17px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  background: #111111;
+
+  color: #ffffff;
+
+  font-size: 10px;
+
+  font-weight: 800;
+
+  text-align: center;
+}
+
+.brand-card:first-child .brand-logo {
+  background: #e5092f;
+}
+
+.brand-card:nth-child(3) .brand-logo {
+  background: #252525;
+}
+
+/* Brand information */
+
+.brand-info {
+  flex: 1;
+
+  min-width: 0;
+
+  margin-left: 18px;
+}
+
+.brand-info h3 {
+  color: #151522;
+
+  font-size: 18px;
+
+  line-height: 1.25;
+
+  font-weight: 700;
+
+  margin-bottom: 6px;
+}
+
+.brand-info p {
+  color: #737486;
+
+  font-size: 13px;
+
+  line-height: 1.4;
+}
+
+/* Brand arrow */
+
+.brand-arrow {
+  width: 30px;
+  height: 30px;
+
+  flex-shrink: 0;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  color: #7228df;
+
+  font-size: 25px;
+}
+
+/* =========================
+   NEARBY STORES
+========================= */
+
+.empty-state {
+  margin-top: 18px;
+
+  padding: 35px 22px;
+
+  background: #ffffff;
+
+  border: 1px solid #e5e5eb;
+
+  border-radius: 22px;
+
+  text-align: center;
+}
+
+.empty-icon {
+  width: 58px;
+  height: 58px;
+
+  margin: 0 auto 15px;
+
+  border-radius: 50%;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  background: #f0e9fb;
+
+  color: #7228df;
+
+  font-size: 25px;
+}
+
+.empty-state h3 {
+  color: #22222d;
+
+  font-size: 17px;
+
+  margin-bottom: 8px;
+}
+
+.empty-state p {
+  color: #858590;
+
+  font-size: 13px;
+
+  line-height: 1.5;
+}
+
+/* =========================
+   MARKETPLACE
+========================= */
+
+.marketplace-section {
+  padding-bottom: 30px;
+}
+
+.marketplace-subtitle {
+  margin-top: 5px;
+
+  color: #858590;
+
+  font-size: 13px;
+
+  line-height: 1.4;
+}
+
+.marketplace-placeholder {
+  margin-top: 18px;
+
+  padding: 40px 22px;
+
+  background: #ffffff;
+
+  border: 1px solid #e4e4e9;
+
+  border-radius: 22px;
+
+  text-align: center;
+}
+
+.marketplace-placeholder-icon {
+  width: 64px;
+  height: 64px;
+
+  margin: 0 auto 16px;
+
+  border-radius: 20px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  background: #f0e9fb;
+
+  font-size: 30px;
+}
+
+.marketplace-placeholder h3 {
+  color: #22222d;
+
+  font-size: 18px;
+
+  font-weight: 700;
+
+  margin-bottom: 8px;
+}
+
+.marketplace-placeholder p {
+  max-width: 270px;
+
+  margin: 0 auto;
+
+  color: #858590;
+
+  font-size: 13px;
+
+  line-height: 1.5;
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 480px) {
+  .shop-hero {
+    min-height: 425px;
+
+    padding: 52px 36px 40px;
+  }
+
+  .shop-hero h1 {
+    font-size: 35px;
+  }
+
+  .hero-shopping-image {
+    right: -25px;
+
+    bottom: 25px;
+
+    width: 165px;
+    height: 165px;
+
+    font-size: 90px;
+  }
+
+  .shop-tabs {
+    margin-left: 16px;
+
+    margin-right: 16px;
+  }
+
+  .shop-tab {
+    font-size: 12px;
+  }
+
+  .brand-card {
+    min-height: 112px;
+
+    padding: 16px;
+  }
+
+  .brand-logo {
+    width: 72px;
+    height: 72px;
+  }
+
+  .brand-info {
+    margin-left: 15px;
+  }
+
+  .brand-info h3 {
+    font-size: 17px;
+  }
+}
