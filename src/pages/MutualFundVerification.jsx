@@ -81,7 +81,7 @@ function MutualFundVerification({ product, currentPrice, onBack, onContinue }) {
       </div>
 
       <div className="verification-intro">
-        <div className="verification-icon">🔐</div>
+       
 
         <h1>Verify your investments</h1>
 
